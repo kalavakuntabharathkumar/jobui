@@ -1,0 +1,11 @@
+import type { Job } from '../types';
+export const jobs: Job[] = [
+{id:'1',title:'Senior Product Designer',company:'Linear Labs',location:'Remote · US',type:'Full-time',salary:'$125k–$160k',posted:'2h ago',logo:'L',color:'#5b5bd6',tags:['Product','Figma','Design systems'],featured:true,description:'Shape intuitive workflows with product and engineering teams.'},
+{id:'2',title:'Frontend Engineer, React',company:'Vercel',location:'New York, NY',type:'Full-time',salary:'$130k–$175k',posted:'4h ago',logo:'V',color:'#111827',tags:['React','TypeScript','CSS'],featured:true,description:'Build delightful web experiences and reliable UI foundations.'},
+{id:'3',title:'Data Analyst',company:'Northstar Health',location:'Hybrid · Austin',type:'Full-time',salary:'$90k–$115k',posted:'1d ago',logo:'N',color:'#0f766e',tags:['SQL','Python','Analytics'],description:'Turn complex datasets into clear decisions for care teams.'},
+{id:'4',title:'Backend Software Engineer',company:'Orbit Cloud',location:'Remote · Europe',type:'Full-time',salary:'€75k–€105k',posted:'1d ago',logo:'O',color:'#ea580c',tags:['Node.js','PostgreSQL','AWS'],description:'Design APIs and distributed services that scale.'},
+{id:'5',title:'Growth Marketing Associate',company:'Goodkind',location:'San Francisco, CA',type:'Contract',salary:'$55–$70/hr',posted:'2d ago',logo:'G',color:'#be185d',tags:['Growth','SEO','Experimentation'],description:'Run thoughtful growth experiments across acquisition channels.'},
+{id:'6',title:'Machine Learning Engineer',company:'Aster AI',location:'Hybrid · Boston',type:'Full-time',salary:'$145k–$190k',posted:'3d ago',logo:'A',color:'#7c3aed',tags:['Python','PyTorch','MLOps'],description:'Ship dependable ML systems from prototype to production.'},
+{id:'7',title:'Customer Success Manager',company:'Acme Cloud',location:'Remote · US',type:'Full-time',salary:'$85k–$105k',posted:'3d ago',logo:'A',color:'#2563eb',tags:['SaaS','Customer success','CRM'],description:'Help customers realize measurable value from their platform.'},
+{id:'8',title:'UX Research Intern',company:'Studio Field',location:'Chicago, IL',type:'Internship',salary:'$28–$34/hr',posted:'4d ago',logo:'S',color:'#0891b2',tags:['Research','Interviews','UX'],description:'Plan research studies and translate user insight into action.'}
+];

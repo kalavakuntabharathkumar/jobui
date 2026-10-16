@@ -1,0 +1,1 @@
+export type Job = { id: string; title: string; company: string; location: string; type: string; salary: string; posted: string; logo: string; color: string; tags: string[]; featured?: boolean; description: string };
