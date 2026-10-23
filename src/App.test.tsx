@@ -1,0 +1,5 @@
+import { render, screen, fireEvent } from '@testing-library/react'; import { Provider } from 'react-redux'; import { store } from './store'; import App from './App';
+const mount=()=>render(<Provider store={store}><App/></Provider>);
+test('renders the portal and seeded roles',()=>{mount();expect(screen.getByText(/Work that moves you/i)).toBeInTheDocument();expect(screen.getByText('Senior Product Designer')).toBeInTheDocument();});
+test('filters jobs by keyword',()=>{mount();fireEvent.change(screen.getByLabelText('Search jobs'),{target:{value:'Machine Learning'}});expect(screen.getByText('Machine Learning Engineer')).toBeInTheDocument();expect(screen.queryByText('Data Analyst')).not.toBeInTheDocument();});
+test('saves a role and shows the saved tab',()=>{mount();fireEvent.click(screen.getByLabelText('Save Senior Product Designer'));fireEvent.click(screen.getByRole('button',{name:/Saved/}));expect(screen.getByText('Senior Product Designer')).toBeInTheDocument();expect(screen.queryByText('Data Analyst')).not.toBeInTheDocument();});

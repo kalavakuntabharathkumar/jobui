@@ -1,0 +1,1 @@
+describe('Northstar Jobs',()=>{it('searches and filters job cards',()=>{cy.visit('/');cy.contains('Senior Product Designer');cy.get('input[aria-label="Search jobs"]').type('Machine Learning');cy.get('[data-testid="job-card"]').should('have.length',1).and('contain','Machine Learning Engineer');});});
